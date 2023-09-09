@@ -1,12 +1,10 @@
 EarlyBird APC Injection
 ===
-Implementation of Early Bird APC Injection using DInvoke, with RC4 encryption, and the ability to receive the shellcode locally or remotely (raw and encoded in base64).
+Implementation of Early Bird APC Injection using DInvoke, with RC4 encryption, and the ability to receive the shellcode locally (raw) or remotely (raw and encoded in base64).
 
 Usage
 ---
 ```
-PS C:\Users\User> [EarlyBird.Program]::Main(@())
-
 Usage [1]: Passing the shellcode locally and using the default process: C:\Windows\System32\notepad.exe
         e.g. EarlyBird.exe -shellcode <shellcode-file>
         e.g. EarlyBird.exe -shellcode C:\Users\user\Desktop\shellcode.sc
