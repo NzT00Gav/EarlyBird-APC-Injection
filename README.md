@@ -1,6 +1,6 @@
 EarlyBird APC Injection
 ===
-Implementation of Early Bird APC Injection using DInvoke, with RC4 encryption, and the ability to receive the shellcode locally (raw) or remotely (raw and encoded in base64).
+Implementation of Early Bird APC Injection using DInvoke, with RC4 encryption, and the capability to receive the encrypted shellcode locally or remotely.
 
 Usage
 ---
