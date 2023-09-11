@@ -138,7 +138,7 @@ namespace EarlyBird
     }
     public class Program
     {
-        private static string DEFAULT_PROCESS = @"C:\\Windows\\System32\\notepad.exe";
+        private static string DEFAULT_PROCESS = @"C:\Windows\System32\notepad.exe";
         private static uint MEM_COMMIT = 0x1000;
         private static uint MEM_RESERVE = 0x2000;
         private static uint PAGE_READWRITE = 0x04;
